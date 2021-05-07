@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: scg-openapi
+  namespace: spring-cloud-gateway
+  annotations:
+    kubernetes.io/ingress.class: contour
+spec:
+  rules:
+    - host: scg-openapi.34.68.239.100.nip.io
+      http:
+        paths:
+        - backend:
+            serviceName: scg-operator
+            servicePort: 80

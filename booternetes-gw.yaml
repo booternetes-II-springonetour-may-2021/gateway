@@ -4,7 +4,8 @@ metadata:
   name: booternetes-gw
 spec:
   api:
-    serverUrl: https://booternetes.34.68.239.100.nip.io
+    serverUrl: http://booternetes.34.68.239.100.nip.io
     title: "Booternetes APIs"
     description: "Booternetes APIs that allow manipulating orders in cart for coffee and receiving points."
     version: "1.0.0-K8s"
+  count: 2
