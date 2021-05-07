@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: booternetes-ingress
+  namespace: bk
+  annotations:
+    kubernetes.io/ingress.class: contour
+spec:
+  rules:
+  - host: booternetes.34.68.239.100.nip.io
+    http:
+      paths:
+      - backend:
+          serviceName: booternetes-gw
+          servicePort: 80
+
