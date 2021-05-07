@@ -8,4 +8,7 @@ spec:
     title: "Booternetes APIs"
     description: "Booternetes APIs that allow manipulating orders in cart for coffee and receiving points."
     version: "1.0.0-K8s"
+    cors:
+      allowedOrigins:
+        - http://api-portal.34.68.239.100.nip.io
   count: 2
